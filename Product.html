@@ -1,0 +1,153 @@
+<html>
+  <style>
+    body {
+      background-color: #eee;
+      padding: 10px;
+      margin: 2px;
+      border: #eee;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      min-height: 75px;
+      padding: 0px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #eee;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-wrap: wrap;
+      }
+    }
+    .logo {
+      width: 60vw;
+    }
+    @media (max-width: 650px) {
+      .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+      }
+    }
+    .logo > img {
+      width: 100%;
+      height: 100%;
+      max-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 20px;
+    }
+    nav {
+      float: right;
+      margin: 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      list-style-type: none;
+    }
+
+    nav > ul > li > a {
+      color: #aaa;
+      display: block;
+      line-height: 2em;
+      padding: 0.5em 1em;
+      text-decoration: none;
+    }
+    .button {
+      padding: 0 20px;
+      height: 40px;
+      font-size: 1em;
+      font-weight: 900;
+      text-transform: uppercase;
+      border: 3px black solid;
+      border-radius: 2px;
+      background: transparent;
+      cursor: pointer;
+    }
+    #video {
+      align-content: center;
+    }
+  </style>
+  <head>
+    <title>Product landing page</title>
+    <header id="header">
+      <div class="logo">
+        <img
+          id="header-img"
+          src="https://i.postimg.cc/5Ny1P6zR/Amazo.png"
+          alt="Amazon logo"
+        />
+      </div>
+      <div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#log-in">Log in / Sign Up</a></li>
+            <li><a class="nav-link" href="#menu">Menu</a></li>
+            <li><a class="nav-link" href="#products">Products</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </head>
+  <main>
+    <section id="new-at-amazon">
+      <iframe
+        id="video"
+        height="300"
+        src="https://youtu.be/y8Yv4pnO7qc"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="log-in">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          id="email"
+          required
+        />
+        <input type="submit" id="submit" value="Get Started" class="button" />
+      </form>
+    </section>
+    <section id="menu">
+      <h2>Apppliances</h2>
+      <p>
+        Major appliances, also known as white goods, comprise major household
+        appliances and may include: air conditioners, dishwashers, clothes
+        dryers, drying cabinets
+      </p>
+      <h2>Electronics</h2>
+      <p>
+        The field of Electronics is a branch of physics and electrical
+        engineering that deals with the emission, behaviour and effects of
+        electrons using electronic devices.
+      </p>
+      <h2>Mobile Phones</h2>
+      <p>
+        A mobile phone, cellular phone, cell phone, cellphone, handphone, or
+        hand phone, sometimes shortened to simply mobile, cell or just phone, is
+        a portable telephone that can make and receive calls over a radio
+        frequency link while the user is moving within a telephone service area.
+      </p>
+      <h2>Customer Support</h2>
+      <p>Press here to talk to customer support</p>
+    </section>
+    <section id="products">
+      <h2>Buy here at low prices</h2>
+    </section>
+  </main>
+</html>
