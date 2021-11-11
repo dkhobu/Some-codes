@@ -1,0 +1,342 @@
+<html>
+    <style>
+    main{
+      margin-left: 300px;
+    }
+    title{
+      text-align: center;
+    }
+    #navbar ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      position: fixed;
+      height: 100%;
+      width: 300px;
+      overflow: scroll;
+      background-color: #f1f1f1;
+    }
+    .main-section li{
+      list-style-type:none;
+    }
+    #navbar {
+      position: fixed;
+      min-width: 290px;
+      top: 0px;
+      left: 0px;
+      width: 300px;
+      height: 100%;
+      border-right: solid;
+      border-color: rgba(0, 22, 22, 0.4);
+    }
+
+    header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+    }
+
+    #main-doc header {
+      text-align: left;
+      margin: 0px;
+    }
+
+    #navbar a {
+      display: block;
+      padding: 10px 30px;
+      color: #4d4e53;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #main-doc {
+      position: absolute;
+      margin-left: 310px;
+      padding: 20px;
+      margin-bottom: 110px;
+    }
+
+    section article {
+      color: #4d4e53;
+      margin: 15px;
+      font-size: 0.96em;
+    }
+        @media only screen and (max-width: 815px) {
+        /* For mobile phones: */
+      #navbar ul {
+        border: 1px solid;
+        height: 207px;
+      }
+
+      #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+      }
+
+      #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+      }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+    </style>
+  <head>
+
+    <title>Technical document page</title>
+    <nav id="navbar">
+       <ul>
+        <header>
+          <h2>CSS Documentation</h2>
+        </header>
+        <li><a class="nav-link" href="#CSS_Tutorial">CSS Tutorial</a></li>
+        <li><a class="nav-link" href="#CSS_Example">CSS Example</a></li>
+        <li><a class="nav-link" href="#Guide">Guide</a></li>
+        <li><a class="nav-link" href="#CSS_Introduction">CSS Introduction</a></li>
+        <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+        <li><a class="nav-link" href="#CSS_Colors">CSS Colors</a></li>
+        <li><a class="nav-link" href="#CSS_Backgrounds">CSS Backgrounds</a></li>
+        <li><a class="nav-link" href="#CSS_Borders">CSS Borders</a></li>
+        <li><a class="nav-link" href="#CSS_Margin">CSS Margin</a></li>
+        <li><a class="nav-link" href="#CSS_Padding">CSS Padding</a></li>
+        <li><a class="nav-link" href="#CSS_Height_and_Width">CSS Height and Width</a></li>
+        <li><a class="nav-link" href="#CSS_Box_Model">CSS Box Model</a></li>
+      </ul>
+    </nav>
+  </head>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="CSS_Tutorial">
+        <header><h2>CSS Tutorial</h2></header>
+        <article>
+          <p>
+            CSS is the language we use to style an HTML document. CSS describes
+            how HTML elements should be displayed. This tutorial will teach you
+            CSS from basic to advanced.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="CSS_Example">
+        <header><h2>CSS Example</h2></header>
+        <article>
+          <p>
+            This CSS tutorial contains hundreds of CSS examples. With our online
+            editor, you can edit the CSS, and click on a button to view the
+            result.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Guide">
+        <header><h2>Guide</h2></header>
+        <article>
+          <p>
+            We recommend reading this tutorial, in the sequence listed in the
+            menu. If you have a large screen, the menu will always be present on
+            the left. If you have a small screen, open the menu by clicking the
+            top menu sign
+          </p>
+
+          <header><h2>CSS Templates</h2></header>
+          <p>
+            <code
+          >function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");
+          </code>
+
+            We have created some responsive W3.CSS templates for you to use. You
+            are free to modify, save, share, and use them in all your projects
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="CSS_Introduction">
+        <header><h2>CSS Introduction</h2></header>
+        <article>
+          <p>
+            <h3>What is CSS?</h3>
+            CSS stands for Cascading Style Sheets CSS describes how HTML
+            elements are to be displayed on screen, paper, or in other media CSS
+            saves a lot of work. It can control the layout of multiple web pages
+            all at once External stylesheets are stored in CSS files
+          </p>
+          <header><h2>Why use CSS?</h2></header>
+          <p>
+            CSS is used to define styles for your web pages, including the
+            design, layout and variations in display for different devices and
+            screen sizes.
+          </p>
+          <header><h2>CSS saves a lot of work</h2></header>
+          <p>
+            The style definitions are normally saved in external .css files.
+            With an external stylesheet file, you can change the look of an
+            entire website by changing just one file!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="CSS_Syntax">
+        <header><h2>CSS Syntax</h2></header>
+        <article>
+          <p>
+            A CSS rule consists of a selector and a declaration block. The
+            selector points to the HTML element you want to style. The
+            declaration block contains one or more declarations separated by
+            semicolons. Each declaration includes a CSS property name and a
+            value, separated by a colon. Multiple CSS declarations are separated
+            with semicolons, and declaration blocks are surrounded by curly
+            braces.
+          </p>
+        
+        <li>
+          <header><h2>CSS Selectors</h2></header>
+        
+            <p>
+                A CSS selector selects the HTML element(s) you want to style. 
+                <code>
+                  p {
+                    text-align: center;
+                    color: red;
+                  }
+                  
+                </code>  
+            </p>
+            <p><h3>The id Selector</h3>
+                The id selector uses the id attribute of an HTML element to select a specific element.
+
+                The id of an element is unique within a page, so the id selector is used to select one unique element!
+                
+                To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+                <code>
+
+                  #para1 {
+                    text-align: center;
+                    color: red;
+                  }
+                </code>
+            </p>
+        </li>
+            <li>
+              <p><h3>The class Selector</h3>
+                The class selector selects HTML elements with a specific class attribute.
+
+                To select elements with a specific class, write a period (.) character, followed by the class name.
+                <code>
+
+                  .center {
+                    text-align: center;
+                    color: red;
+                  }
+                </code>
+            </p>
+            </li>
+          
+        </article> 
+      </section>
+     <section class="main-section" id="CSS_Colors">
+        <header><h2>CSS Colors</h2></header>
+        <article>
+            <p>
+                In CSS, a color can be specified by using a predefined color name: 
+                Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.  
+            </p>
+            <li><header>RGB</header><p>
+              In CSS, a color can be specified as an RGB value, using this formula:
+
+              rgb(red, green, blue)
+              <code>
+                <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+              </code>
+            </p></li>
+            <li><header>Hexadecimal</header><p>
+              In CSS, a color can be specified using a hexadecimal value in the form:
+
+              #rrggbb
+              
+              Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+              <code>
+                <h1 style="background-color:#ff6347;">...</h1>
+              </code>
+            </p></li>
+            <li><header>HSL</header><p>
+              In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+
+              hsl(hue, saturation, lightness)
+
+              Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+              <code>
+              <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+              </code>
+            </p></li>
+        </article>
+     </section>
+     <section class="main-section" id="CSS_Backgrounds">
+       <header>CSS Backgrounds</header>
+        <article>
+          <p>
+            The CSS background properties are used to add background effects for elements. 
+          </p>
+        </article>
+     </section>
+     <section class="main-section" id="CSS_Borders">
+      <header>CSS Borders</header>
+      <p>
+        The CSS border properties allow you to specify the style, width, and color of an element's border. 
+      </p>
+      </section>
+      <section class="main-section" id="CSS_Margin" >
+        <header>CSS Margin</header>
+        <p>
+          Margins are used to create space around elements, outside of any defined borders. 
+        </p>
+      </section>
+
+      <section class="main-section" id="CSS_Padding">
+        <header>CSS Padding</header>
+        <p>
+          Padding is used to create space around an element's content, inside of any defined borders.
+        </p>
+      </section>
+      <section class="main-section" id="CSS_Height_and_Width">
+        <header>CSS Height and Width</header>
+        <p>
+          The CSS height and width properties are used to set the height and width of an element.
+
+          The CSS max-width property is used to set the maximum width of an element.  
+        </p>
+      </section>
+      <section class="main-section" id="CSS_Box_Model">
+        <header>CSS Box Model</header>
+        <p>
+          In CSS, the term "box model" is used when talking about design and layout.
+
+          The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+        </p>
+      </section>
+
+    </main>
+  </body>
+</html>
