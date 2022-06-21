@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petemoss&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petemoss&family=Poppins:wght@200&family=Praise&display=swap');
+*{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#projects{
+    display: block;
+    background-color: #d7e1ec;
+    text-align: center;
+}
+.projects-header{
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 3em;
+    color:#222831;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); 
+    grid-gap: 4rem;
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+.caption{
+    color: white;
+    text-decoration: none;
+}
+.project-tile {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+.project{
+    background-color:#222831;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
+}
+#navbar{
+    position: fixed;
+    width: 100%;
+}
+#navbar ul{
+    list-style-type: none;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    background-color: #00ADB5;
+}
+#navbar li{
+    float: left;
+    border: 1px;
+    border-right: 2px solid #00ADB5;
+    border-color: aqua;
+
+}
+#navbar li a{
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
+    font-size: 1em;
+}
+h1{
+    font-size: 6rem;
+    font-family: 'Praise', cursive;
+    color:antiquewhite ;
+}
+h2{
+    font-size: 3rem;
+    font-family: 'Petemoss', cursive;
+    color: #222831;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: -10px;
+    background-image: linear-gradient( 109.6deg,  #00FFF5 11.2%, #00ADB5 91.1% );
+    
+}
+#my-profile{
+    display: grid;
+    height: 50%;
+    width: 100%;
+    place-items: center;
+    background-color:#00ADB5 ;
+    
+}
+.profile-link-header{
+    font-size: 3em;
+    font-family: 'Petemoss', cursive;
+}
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: none;
+    overflow: hidden;
+    margin: 0 5px;
+    background: #ffff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+    width: 200px;
+}
+.media{
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper .button .icon{
+    display: inline-block;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+}
+.wrapper .button  span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+
+}
+/* last elememnt*/
+.footer{
+    background: #222831;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 2em;
+    color: white;
+}
+.footer-a{
+    text-decoration: none;
+    color:#00ADB5;
+}
